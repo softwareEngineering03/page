@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html,
+      body {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-[1280px] h-[720px] relative overflow-hidden bg-white">
+      <div class="w-[1280px] h-20">
+        <p
+          class="w-[1280px] h-20 absolute left-0 top-[130px] text-[70px] text-center text-black"
+        >
+          <span
+            id="dynamicContent"
+            class="w-[1280px] h-20 text-[70px] font-semibold text-center text-black"
+            >기업</span
+          ><span
+            class="w-[1280px] h-20 text-[70px] font-light text-center text-black"
+            >을 선택해주세요</span
+          >
+        </p>
+      </div>
+      <div class="w-[580.68px] h-[90.73px]">
+        <div
+          class="w-[580.68px] h-[90.73px] absolute left-[342.5px] top-[248.5px] rounded-[10px] bg-white border-[3px] border-black/40"
+        ></div>
+        <p
+          class="w-[305px] h-11 absolute left-[415px] top-[273px] text-[35px] text-center text-black/30"
+        >
+          Select option
+        </p>
+        <svg
+          width="3"
+          height="59"
+          viewBox="0 0 3 59"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute left-[435.55px] top-[265.33px]"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1.54578 0.331543V58.3995"
+            stroke="black"
+            stroke-opacity="0.4"
+            stroke-width="2"
+          ></path>
+        </svg>
+      </div>
+      <div class="w-[1280px] h-[120px]">
+        <div
+          class="w-[1280px] h-[120px] absolute left-[-0.5px] top-[-0.5px] bg-[#a750ff]"
+        ></div>
+        <img
+          src="画面中软件图标.png"
+          class="w-[124px] h-[119px] absolute left-[-0.5px] top-[0.5px] object-cover"
+        />
+        <p
+          class="w-[500px] h-12 absolute left-[100px] top-[30px] text-[50px] font-black text-center text-white/95"
+        >
+          문제 추천 AI 시스템
+        </p>
+        <p
+          class="w-[363px] h-[63px] absolute left-[900px] top-7 text-[50px] font-semibold text-center text-white"
+        >
+          계정 / 로그아웃
+        </p>
+      </div>
+      <img
+        src="画面中软件图标.png"
+        class="w-20 h-[49.16px] absolute left-[352px] top-[269.5px] object-cover"
+      />
+    </div>
+
+    <div>
+      <img
+        src="三角.png"
+        class="w-46 h-[46px] absolute left-[850px] top-[269.5px] object-cover"
+        id="mySelect"
+        style="cursor: pointer"
+      />
+    </div>
+    <div id="content" style="display: none">
+      <div class="w-[580.68px] h-[270px]">
+        <div
+          class="w-[580.68px] h-[270px] absolute left-[342.5px] top-[248.5px] rounded-tl-[10px] rounded-tr-[10px] bg-white border-[3px] border-black/40"
+        ></div>
+        <img
+          src="倒三角.png"
+          class="w-46 h-[46px] absolute left-[850px] top-[269.5px] object-cover"
+          id="mySelect_2"
+          style="cursor: pointer"
+        />
+        <svg
+          width="570"
+          height="4"
+          viewBox="0 0 570 4"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute left-[347.5px] top-[340.5px]"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0 2H570"
+            stroke="black"
+            stroke-opacity="0.4"
+            stroke-width="3"
+          ></path></svg
+        ><svg
+          width="570"
+          height="4"
+          viewBox="0 0 570 4"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute left-[347.5px] top-[430.5px]"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0 2H570"
+            stroke="black"
+            stroke-opacity="0.4"
+            stroke-width="3"
+          ></path></svg
+        ><svg
+          width="3"
+          height="59"
+          viewBox="0 0 3 59"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute left-[435.55px] top-[265.33px]"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1.5459 0.331543V58.3995"
+            stroke="black"
+            stroke-opacity="0.4"
+            stroke-width="2"
+          ></path></svg
+        ><img
+          src="画面中软件图标.png"
+          class="w-20 h-[49.16px] absolute left-[352px] top-[269.5px] object-cover"
+        />
+        <p
+          class="w-[305px] h-11 absolute left-[415px] top-[273px] text-[35px] text-center text-black/30"
+        >
+          Select option
+        </p>
+        <p
+          class="absolute left-[457px] top-[360px] text-[35px] text-center text-black/50"
+id="katalk"
+        style="cursor: pointer"
+        >
+          카톡
+        </p>
+        <p
+          class="absolute left-[457px] top-[445px] text-[35px] text-center text-black/50"
+id="samsung"
+        style="cursor: pointer"
+        >
+          삼성
+        </p>
+      </div>
+    </div>
+    <div>
+      <script>
+        document
+          .getElementById("mySelect")
+          .addEventListener("click", function () {
+            document.getElementById("content").style.display = "block"; // 或者 "flex", "grid" 根据您的布局需求
+          });
+      </script>
+    </div>
+    <div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document
+            .getElementById("mySelect_2")
+            .addEventListener("click", function () {
+              var content = document.getElementById("content");
+              // 设置 content 元素的 display 属性为 none 来隐藏它
+              content.style.display = "none";
+            });
+        });
+      </script>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 解析URL查询参数
+        var params = new URLSearchParams(window.location.search);
+        var type = params.get("type"); // 获取 'type' 查询参数
+
+        // 获取要动态更改内容的span标签
+        var dynamicContent = document.getElementById("dynamicContent");
+
+        // 根据 'type' 参数的值动态更改span标签的内容
+        if (type === "past") {
+          dynamicContent.textContent = "기업";
+        } else if (type === "type") {
+          dynamicContent.textContent = "유형";
+        }
+      });
+
+	var pastQuestions = document.getElementById("katalk");
+      	pastQuestions.addEventListener("click", function () {
+        window.location.href = "C:/users/18406/OneDrive/바탕%20화면/网页打包/난이도페이지.html";
+	});
+	var pastQuestions = document.getElementById("samsung");
+      	pastQuestions.addEventListener("click", function () {
+        window.location.href = "C:/users/18406/OneDrive/바탕%20화면/网页打包/난이도페이지.html";
+    	});
+    </script>
+	
+  </body>
+</html>

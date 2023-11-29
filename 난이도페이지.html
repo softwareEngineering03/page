@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html, body {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-[1280px] h-[720px] relative overflow-hidden bg-white">
+      <div class="w-[1280px] h-20">
+        <p class="w-[1280px] h-20 absolute left-0 top-[220px] text-[70px] text-center text-black">
+          <span class="w-[1280px] h-20 text-[70px] font-semibold text-center text-black"
+            >난이도</span
+          ><span class="w-[1280px] h-20 text-[70px] font-light text-center text-black"
+            >를 선택해주세요</span
+          >
+        </p>
+      </div>
+
+      <div class="w-40 h-[60px] absolute left-[115px] top-[470px] flex items-center justify-center">
+    <button class="w-40 h-[90px] rounded-[50px] bg-gradient-to-r from-purple-600 to-purple-400 text-white/90 text-[40px]">
+      A
+    </button>
+  </div>
+<div class="w-40 h-[60px] absolute left-[405px] top-[470px] flex items-center justify-center">
+    <button class="w-40 h-[90px] rounded-[50px] bg-gradient-to-r from-purple-600 to-purple-400 text-white/90 text-[40px]">
+      B
+    </button>
+  </div>
+<div class="w-40 h-[60px] absolute left-[695px] top-[470px] flex items-center justify-center">
+    <button class="w-40 h-[90px] rounded-[50px] bg-gradient-to-r from-purple-600 to-purple-400 text-white/90 text-[40px]">
+      C
+    </button>
+  </div>
+<div class="w-40 h-[60px] absolute left-[985px] top-[470px] flex items-center justify-center">
+    <button class="w-40 h-[90px] rounded-[50px] bg-gradient-to-r from-purple-600 to-purple-400 text-white/90 text-[40px]">
+      D
+    </button>
+  </div>
+
+      <div class="w-[1280px] h-[120px]">
+        <div class="w-[1280px] h-[120px] absolute left-[-0.5px] top-[-0.5px] bg-[#a750ff]"></div>
+        <img
+          src="软件图标.png"
+          class="w-[124px] h-[119px] absolute left-[-0.5px] top-[0.5px] object-cover"
+        />
+        <p
+          class="w-[500px] h-12 absolute left-[100px] top-[30px] text-[50px] font-black text-center text-white/95"
+        >
+          문제 추천 AI 시스템
+        </p>
+        <p
+          class="w-[363px] h-[63px] absolute left-[900px] top-7 text-[50px] font-semibold text-center text-white"
+        >
+          계정 / 로그아웃
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
